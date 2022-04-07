@@ -1,0 +1,202 @@
+body{
+    background: #F1F1F1;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ##### Page d'accueil ##### */
+
+nav{
+    display: flex;
+    background-color: #45b7e8;
+}
+
+#nom {
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+    margin-top: 10px;
+    padding-left: 10px;
+    }
+
+nav ul{
+    margin-left: auto;
+    list-style: none;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+#logo{
+    width: 100%;
+    text-align: center;
+    padding-top:40px ;
+}
+
+h1{
+    text-align: center;
+    padding-top: 20px;
+}
+
+#premierTrait{
+    height: 1px;
+    width: 25%;
+    margin: -3px auto;
+    background-color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h3{
+    text-align: center;
+}
+footer{
+    position: fixed; 
+    padding: 0px 10px 10px 10px; 
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    height: auto; 
+    background: #45b7e8;
+}
+
+#logo_fin{
+    width: 50px;
+    float: left;
+    margin-right: 10px;
+}
+
+#logo_fin img{
+    width: 100%;
+    height: 85%;
+}
+
+#copyrightEtIcons{
+	display: flex;
+	margin-bottom: 20px;
+	padding-top: 20px;
+}
+
+#copyright{
+	width: 50%;
+	text-align: left;
+	color: black;
+}
+
+/* ##### Formulaire d'inscription #####*/
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 900px;
+    height: 500px;
+    background: #45b7e8;
+    border-radius: 2px;
+    box-shadow: 1px 0px 15px -2px #000000;
+}
+
+.input{
+    height: 70%;
+    width: 100%;
+    position: relative;
+    visibility: hidden;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.affiche{
+    animation: fade 0.5s forwards;
+    visibility: visible;
+}
+
+#button{
+    background-color: #b7bdbc;
+    border: none;
+    border-radius: 4px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#button :hover{
+    cursor: pointer;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+/* ##### Formulaire de connexion ##### */
+
+.container_connect{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 700px;
+    height: 200px;
+    background: #45b7e8;
+    border-radius: 2px;
+    box-shadow: 1px 0px 15px -2px #000000;
+}
+
+#form{
+    text-align: center;
+}
+
+#nom_user{
+    margin-top: 20px;
+}
+
+#prenom_user{
+    margin-top: 20px;
+}
+
+#button_connect{
+    background-color: #b7bdbc;
+    border: none;
+    border-radius: 4px;
+    color: black;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 2px;
+    cursor: pointer;
+}
+
+#button_connect :hover{
+    cursor: pointer;
+}

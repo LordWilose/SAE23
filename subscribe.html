@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <title>SAE23</title>
+</head>
+<body>
+    <div id="logo">
+        <img src="logo_Cov_Auto.png" alt="Logo de l'application">
+    </div>
+    <div class="container">
+            <h3>Inscrivez-vous</h3>
+            <form action="addAll.php" method="post">
+                <div id="student" class="input affiche">
+                    <label for="name">Nom</label>
+                    <input type="text" name="name" id="name" autofocus>
+                    <label for="firstname">Prénom</label>
+                    <input type="text" name="firstname" id="fistname">
+                    <label for="domicile">Domicile</label>
+                    <input type="text" name="domicile" id="domicile">
+                </div>
+                <div id="vehicule" class="input">
+                    <label for="vehicule">Avez-vous une voiture ?</label>
+                    <label for="vehicule">Oui</label>
+                    <input type="radio" name="vehicule" id="vehicule_oui" value="1">
+                    <label for="vehicule">Non</label>
+                    <input type="radio" name="vehicule" id="vehicule_non" value="0">
+                </div>
+                <div id="vehicule_ok" class="input">
+                    <label for="place">Si oui, combien de places ?</label>
+                    <input type="text" name="place" id="place" value="0">
+                    <label for="type">Quel est le type du véhicule ?</label>
+                    <input type="text" name="type" id="type" value="0">
+                    <label for="marque">De quelle marque ?</label>
+                    <input type="text" name="marque" id="marque" value="0">
+                    <label for="modele">Quel est le modèle ?</label>
+                    <input type="text" name="modele" id="modele" value="0">
+                    <label for="immatriculation">Quelle est votre immatriculation ?</label>
+                    <input type="text" name="immatriculation" id="immatriculation" value="0">
+                </div>
+                <div id="papiers" class="input">  
+                    <label for="permis">Avez-vous le permis ?</label>
+                    <label for="permis">Oui</label>
+                    <input type="radio" name="permis" id="permis_oui" value="1">
+                    <label for="permis">Non</label>
+                    <input type="radio" name="permis" id="permis_non" value="0">
+                </div>
+                <div id="permis_ok" class="input">
+                    <label for="point_permis">Si oui, combien de point ?</label>
+                    <input type="text" name="point_permis" id="point_permis" value="0">
+                    <label for="cg">La carte grise est à jour ?</label>
+                    <label for="cg">Oui</label>
+                    <input type="radio" name="cg" id="cg_oui" value="1">
+                    <label for="cg">Non</label>
+                    <input type="radio" name="cg" id="cg_non" value="0">
+                    <label for="ct">Le contrôle technique est à jour ?</label>
+                    <label for="ct">Oui</label>
+                    <input type="radio" name="ct" id="ct_oui" value="1">
+                    <label for="ct">Non</label>
+                    <input type="radio" name="ct" id="ct_non" value="0">
+                    <label for="assurance">L'assurance est à jour ?</label>
+                    <label for="assurance_oui">Oui</label>
+                    <input type="radio" name="assurance" id="assurance_oui" value="1">
+                    <label for="assurance_non">Non</label>
+                    <input type="radio" name="assurance" id="assurance_non" value="0">
+                </div>
+                <div id="etablissement" class="input">
+                    <label for="nom_etablissement">Quel est le nom de l'établissement ?</label>
+                    <input type="text" name="nom_etablissement" id="nom_etablissement">
+                    <label for="formation">Quelle est votre formation ?</label>
+                    <input type="text" name="formation" id="formation">
+                    <label for="groupe">Quel est votre groupe ?</label>
+                    <input type="text" name="groupe" id="groupe">
+                    <label for="sous_groupe">Quel est votre sous-groupe ?</label>
+                    <input type="text" name="sous_groupe" id="sous_groupe">
+                </div>
+                <div id="submit" class="input">
+                    <input id="button" type="submit" value="Envoyer">
+                </div>
+            </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
