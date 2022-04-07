@@ -2,6 +2,7 @@
 -- version 5.1.3
 -- https://www.phpmyadmin.net/
 --
+
 -- Hôte : 127.0.0.1
 -- Généré le : jeu. 07 avr. 2022 à 18:30
 -- Version du serveur : 10.4.24-MariaDB
@@ -85,6 +86,10 @@ INSERT INTO `etudiant` (`IdE`, `IdIUT`, `Nom`, `Prenom`, `Domicile`) VALUES
 (18, 9, 'APPLE', 'Pie', 'MONTBELIARD'),
 (19, 10, 'BRETZEL', 'Emmanuel', 'COLMAR'),
 (20, 10, 'CHOUCROUTE', 'Alex', 'BELFORT');
+(7, 3, 'GIVRON', 'Stephane', 'IUT'),
+(8, 4, 'PARRE', 'Aline', 'BELFORT'),
+(9, 10, 'CANALDA', 'Philippe', 'BELFORT');
+
 
 -- --------------------------------------------------------
 

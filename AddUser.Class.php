@@ -5,20 +5,6 @@ class AddUser {
 	public function __construct($pdo){
 		$this->db = $pdo;
 	}
-
-	public function exist($nom, $prenom){
-		$expression = "SELECT * FROM etudiant
-					   WHERE Nom = '$nom' AND Prenom = '$prenom';";
-		$sth = $this->db->prepare($expression);
-		$sth->execute();
-		$result = $sth->fetchAll()[0];
-
-		if(!empty($result)){
-			return 1;
-		}else{
-			return 0;
-		}
-	}
 	
 	public function getIdFormation($nom, $formation, $groupe, $sous_groupe){
 		$expression = "SELECT IdIUT FROM etablissement 
@@ -104,5 +90,4 @@ class AddUser {
 		}
 	}
 }
-
 ?>

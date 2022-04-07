@@ -5,7 +5,7 @@ class DB {
 
 	public function connexion() {
 		try{
-			$this->db = new PDO('mysql:host=localhost;dbname=sae23_covoiturage', 'admin', 'mysecurepassword');
+			$this->db = new PDO('mysql:host=localhost;dbname=sae23_covoiturage', 'root', '');
 			return $this->db;
 		}
 		catch(PDOException $e){
