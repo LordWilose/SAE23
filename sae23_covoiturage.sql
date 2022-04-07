@@ -85,7 +85,7 @@ INSERT INTO `etudiant` (`IdE`, `IdIUT`, `Nom`, `Prenom`, `Domicile`) VALUES
 (17, 9, 'PEACE', 'Pan', 'MONTBELIARD'),
 (18, 9, 'APPLE', 'Pie', 'MONTBELIARD'),
 (19, 10, 'BRETZEL', 'Emmanuel', 'COLMAR'),
-(20, 10, 'CHOUCROUTE', 'Alex', 'BELFORT');
+(20, 10, 'CHOUCROUTE', 'Alex', 'BELFORT'),
 (7, 3, 'GIVRON', 'Stephane', 'IUT'),
 (8, 4, 'PARRE', 'Aline', 'BELFORT'),
 (9, 10, 'CANALDA', 'Philippe', 'BELFORT');
