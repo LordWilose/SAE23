@@ -7,7 +7,7 @@ class Equipage{
 	}
 
 	public function getAllStudentsInfos(){
-		$expression = "SELECT Nom, Prenom, IdIUT, Domicile FROM etudiant;";
+		$expression = "SELECT IdE, Nom, Prenom, IdIUT, Domicile FROM etudiant;";
 		$sth = $this->db->prepare($expression);
 		$sth->execute();
 		$results = $sth->fetchAll(); // ['Nom'] ['Prenom']
@@ -19,20 +19,23 @@ class Equipage{
 
 			$student['Nom'] = $nom = $result['Nom'];
 			$student['Prenom'] = $prenom = $result['Prenom'];
+			$student['domicile'] = $result['Domicile'];
+			$student['IdE'] = $result['IdE'];
+
 			$IdIUT = $result['IdIUT'];
 
 			$expression2 = "SELECT * FROM etablissement
 							WHERE IdIUT = '$IdIUT';";
 			$sth2 = $this->db->prepare($expression2);
 			$sth2->execute();
-			$results2 = $sth2->fetchAll()[0];
+			$results2 = $sth2->fetchAll();//["0"];
+			$results2 = $results2[0];
 
 			$student['IUT'] = $results2['Nom'];
 			$student['Formation'] = $results2['Formation'];
 			$student['Groupe'] = $results2['Groupe'];
 			$student['Sous_Groupe'] = $results2['Sous_groupe'];
 			$student['Loc'] = $results2['Localisation'];
-			$student['domicile'] = $result['Domicile'];
 
 			$values[$nom] = $student;
 		}
@@ -73,7 +76,7 @@ class Equipage{
 		$sth->execute();
 		$result = $sth->fetchAll();
 
-		if(!empty($result[0])){
+		if((!empty($result[0])) and $result[0]['En_regle'] == "1"){
 			return 1;
 		}else{
 			return 0;
@@ -103,13 +106,51 @@ class Equipage{
 	}
 
 	public function setEquipages(){
-		$array1 = $this->getAllStudentsInfos();
-		$array2 = $this->getHoraires($array1);
-		$locs = $this->sortByLoc($array2);
+		$infos = $this->getAllStudentsInfos();
+		$horaires = $this->getHoraires($infos);
+		$locs = $this->sortByLoc($horaires);
+		$IUTs = $locs[0]; $domiciles = $locs[1];
 
-		
+		$date = date('l');
+		$heure = date('G');
+
+		if($heure > "12"){
+			$journee = "soir";
+			$marge = "+";
+		}else{
+			$journee = "matin";
+			$marge = "-";
+		}
+
+		//print_r($domiciles);
+
+		foreach($IUTs as $nomIUT => $etudiantsIUT){
+			$destinations = array();
+			foreach($etudiantsIUT as $etudiant){
+				foreach($domiciles as $ville => $etusVille){
+					foreach($etusVille as $etu){
+						if($etu == $etudiant){
+							$role = $this->gotCar($infos[$etudiant]["IdE"]);
+							$destinations[$etudiant] = $ville;
+							$horaire = $horaires[$etudiant]["horaires"][$journee][0][$date];
+
+							echo $role." ".$date."<br>".$etudiant."<br>".$nomIUT."<br>".$ville."<br>".$horaire.$marge."15min.<br><br>";
+							if($role == 1){
+								foreach($etusVille as $etu2){
+									if(!($etu2 == $etu)){
+										echo $etu2."<br><br>";
+									}
+								}
+							}
+							
+						}
+					}
+				}
+			}
+			//print_r($destinations);
+			//print_r($horaires[]);
+		}		
 	}
-
 }
 
 ?>
