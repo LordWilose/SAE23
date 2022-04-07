@@ -105,6 +105,17 @@ class Equipage{
 		return array($IUTs, $domiciles);
 	}
 
+	public function getCarPlaces($IdE){
+		$expression = "SELECT Places FROM vehicule
+					   WHERE IdE = '$IdE';";
+		$sth = $this->db->prepare($expression);
+		$sth->execute();
+		$result = $sth->fetch()[0];
+
+		return $result;
+
+	}
+
 	public function setEquipages(){
 		$infos = $this->getAllStudentsInfos();
 		$horaires = $this->getHoraires($infos);
@@ -122,27 +133,52 @@ class Equipage{
 			$marge = "-";
 		}
 
-		//print_r($domiciles);
+		session_start();
 
 		foreach($IUTs as $nomIUT => $etudiantsIUT){
 			$destinations = array();
+
 			foreach($etudiantsIUT as $etudiant){
+
 				foreach($domiciles as $ville => $etusVille){
+
 					foreach($etusVille as $etu){
 						if($etu == $etudiant){
+
 							$role = $this->gotCar($infos[$etudiant]["IdE"]);
 							$destinations[$etudiant] = $ville;
 							$horaire = $horaires[$etudiant]["horaires"][$journee][0][$date];
+							if($_SESSION['nom'] == $etu){
 
-							echo $role." ".$date."<br>".$etudiant."<br>".$nomIUT."<br>".$ville."<br>".$horaire.$marge."15min.<br><br>";
-							if($role == 1){
-								foreach($etusVille as $etu2){
-									if(!($etu2 == $etu)){
-										echo $etu2."<br><br>";
+								echo $etudiant."<br>".$nomIUT."<br>".$ville."<br>".$horaire.$marge."15min.<br><br>";
+								if($role == 1){ // Est conducteur
+
+
+									echo "Passagers : <br>";
+									$i = 0;
+									$nb_places = $this->getCarPlaces($infos[$etudiant]["IdE"]);
+									foreach($etusVille as $etu2){
+
+										if(!($etu2 == $etu) && $i <= (int)$nb_places){
+
+											echo $etu2."<br><br>";
+											$i++;
+										}
+									}
+
+									echo "Nombres de Places Restantes : ".(String)((int)$nb_places - $i);
+								}else{ // N'a pas le permis / n'est pas en règle / n'a pas de voiture
+									echo "Conducteurs : <br>";
+
+									foreach($etusVille as $etu2){
+
+										if(!($etu2 == $etu)){
+
+											echo $etu2."<br><br>"; 
+										}
 									}
 								}
-							}
-							
+							}	
 						}
 					}
 				}
