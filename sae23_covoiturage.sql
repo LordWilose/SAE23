@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le : jeu. 07 avr. 2022 à 08:48
+-- Généré le : jeu. 07 avr. 2022 à 15:14
 -- Version du serveur : 5.7.34
 -- Version de PHP : 7.4.21
 
@@ -75,7 +75,8 @@ INSERT INTO `etudiant` (`IdE`, `IdIUT`, `Nom`, `Prenom`, `Domicile`) VALUES
 (2, 1, 'HIRSCH', 'Mateo', 'COUTHENANS'),
 (3, 1, 'DEUSCHER', 'Lucas', 'DAMBENOIS'),
 (7, 3, 'GIVRON', 'Stephane', 'IUT'),
-(8, 4, 'PARRE', 'Aline', 'BELFORT');
+(8, 4, 'PARRE', 'Aline', 'BELFORT'),
+(9, 10, 'CANALDA', 'Philippe', 'BELFORT');
 
 -- --------------------------------------------------------
 
@@ -99,6 +100,7 @@ CREATE TABLE `papiers` (
 INSERT INTO `papiers` (`Carte_Grise`, `Controle_Technique`, `Assurance`, `Permis`, `Points_Permis`, `Immatriculation`) VALUES
 (1, 1, 1, 1, 1, 'BX-696-DF'),
 (1, 1, 1, 1, 12, 'CQ-648-XF'),
+(1, 1, 1, 1, 12, 'FT-483-GI'),
 (1, 1, 1, 1, 12, 'GA-707-CS'),
 (1, 0, 0, 0, 20, 'PI-7A5-DS');
 
@@ -125,6 +127,7 @@ CREATE TABLE `vehicule` (
 INSERT INTO `vehicule` (`Immatriculation`, `IdE`, `Type`, `Marque`, `Modele`, `Places`, `En_regle`) VALUES
 ('BX-696-DF', 8, 'Sportive', 'Audi', 'A5', 4, 1),
 ('CQ-648-XF', 1, 'Compacte', 'Volkswagen', 'Golf 3', 4, 1),
+('FT-483-GI', 9, 'Familiale', 'Peugeot', '5008', 6, 1),
 ('GA-707-CS', 2, 'Citadine', 'Peugeot', '206', 4, 1),
 ('PI-7A5-DS', 7, 'Berline', 'Peugeot', '207', 4, 0);
 
@@ -164,13 +167,13 @@ ALTER TABLE `vehicule`
 -- AUTO_INCREMENT pour la table `etablissement`
 --
 ALTER TABLE `etablissement`
-  MODIFY `IdIUT` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `IdIUT` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT pour la table `etudiant`
 --
 ALTER TABLE `etudiant`
-  MODIFY `IdE` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `IdE` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

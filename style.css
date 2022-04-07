@@ -65,6 +65,18 @@ h1{
 h3{
     text-align: center;
 }
+
+#map{
+    text-align: center;
+    padding-top: 40px;
+}
+
+#map img{
+    border-radius: 40%;
+    border: 2px solid #45b7e8;
+    box-shadow: 1px 0px 15px -2px #000000;
+}
+
 footer{
     position: fixed; 
     padding: 0px 10px 10px 10px; 
@@ -99,6 +111,35 @@ footer{
 }
 
 /* ##### Formulaire d'inscription #####*/
+
+#nav_sub{
+    display: flex;
+    background-color: #45b7e8;
+    height: 60px;
+}
+
+
+#nom_accueil{
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+#nom_accueil a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
 *, ::before, ::after{
     box-sizing: border-box;
     margin: 0;
@@ -107,7 +148,7 @@ footer{
 
 .container{
     position: absolute;
-    top: 62%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 900px;
@@ -158,6 +199,12 @@ footer{
 }
 
 /* ##### Formulaire de connexion ##### */
+
+#nav_log{
+    display: flex;
+    background-color: #45b7e8;
+    height: 60px;
+}
 
 .container_connect{
     position: absolute;
