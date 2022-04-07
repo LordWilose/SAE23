@@ -9,20 +9,20 @@
                 {
                     "matin":[
                         {
-                            "lundi":"08H00",
-                            "mardi":"09H30",
-                            "mercredi":"08H00",
-                            "jeudi":"08H00",
-                            "vendredi":"08H00"
+                            "Monday":"08H00",
+                            "Tuesday":"09H30",
+                            "Wednesday":"08H00",
+                            "Thursday":"08H00",
+                            "Friday":"08H00"
                         }
                     ],
                     "soir":[
                         {
-                            "lundi":"16H30",
-                            "mardi":"18H00",
-                            "mercredi":"15H00",
-                            "jeudi":"18H00",
-                            "vendredi":"12H30"
+                            "Monday":"16H30",
+                            "Tuesday":"18H00",
+                            "Wednesday":"15H00",
+                            "Thursday":"18H00",
+                            "Friday":"12H30"
                         }
                     ]
                 }
@@ -37,20 +37,20 @@
                 {
                     "matin":[
                         {
-                            "lundi":"08H00",
-                            "mardi":"08H00",
-                            "mercredi":"10H00",
-                            "jeudi":"08H00",
-                            "vendredi":"11H00"
+                            "Monday":"08H00",
+                            "Tuesday":"08H00",
+                            "Wednesday":"10H00",
+                            "Thursday":"08H00",
+                            "Friday":"11H00"
                         }
                     ],
                     "soir":[
                         {
-                            "lundi":"17H00",
-                            "mardi":"18H00",
-                            "mercredi":"17H00",
-                            "jeudi":"18H00",
-                            "vendredi":"17H00"
+                            "Monday":"17H00",
+                            "Tuesday":"18H00",
+                            "Wednesday":"17H00",
+                            "Thursday":"18H00",
+                            "Friday":"17H00"
                         }
                     ]
                 }
@@ -65,20 +65,20 @@
                 {
                     "matin":[
                         {
-                            "lundi":"09H00",
-                            "mardi":"08H00",
-                            "mercredi":"10H00",
-                            "jeudi":"08H00",
-                            "vendredi":"11H00"
+                            "Monday":"09H00",
+                            "Tuesday":"08H00",
+                            "Wednesday":"10H00",
+                            "Thursday":"08H00",
+                            "Friday":"11H00"
                         }
                     ],
                     "soir":[
                         {
-                            "lundi":"18H00",
-                            "mardi":"17HH00",
-                            "mercredi":"18H00",
-                            "jeudi":"18H00",
-                            "vendredi":"17H30"
+                            "Monday":"18H00",
+                            "Tuesday":"17HH00",
+                            "Wednesday":"18H00",
+                            "Thursday":"18H00",
+                            "Friday":"17H30"
                         }
                     ]
                 }
@@ -93,20 +93,20 @@
                 {
                     "matin":[
                         {
-                            "lundi":"08H00",
-                            "mardi":"08H00",
-                            "mercredi":"11H00",
-                            "jeudi":"09H30",
-                            "vendredi":"08H00"
+                            "Monday":"08H00",
+                            "Tuesday":"08H00",
+                            "Wednesday":"11H00",
+                            "Thursday":"09H30",
+                            "Friday":"08H00"
                         }
                     ],
                     "soir":[
                         {
-                            "lundi":"16H30",
-                            "mardi":"18H00",
-                            "mercredi":"18H00",
-                            "jeudi":"16H30",
-                            "vendredi":"12H30"
+                            "Monday":"16H30",
+                            "Tuesday":"18H00",
+                            "Wednesday":"18H00",
+                            "Thursday":"16H30",
+                            "Friday":"12H30"
                         }
                     ]
                 }
@@ -121,20 +121,20 @@
                 {
                     "matin":[
                         {
-                            "lundi":"08H00",
-                            "mardi":"09H30",
-                            "mercredi":"08H00",
-                            "jeudi":"08H00",
-                            "vendredi":"08H00"
+                            "Monday":"08H00",
+                            "Tuesday":"09H30",
+                            "Wednesday":"08H00",
+                            "Thursday":"08H00",
+                            "Friday":"08H00"
                         }
                     ],
                     "soir":[
                         {
-                            "lundi":"16H30",
-                            "mardi":"18H00",
-                            "mercredi":"15H00",
-                            "jeudi":"18H00",
-                            "vendredi":"12H30"
+                            "Monday":"16H30",
+                            "Tuesday":"18H00",
+                            "Wednesday":"15H00",
+                            "Thursday":"18H00",
+                            "Friday":"12H30"
                         }
                     ]
                 }
@@ -150,20 +150,20 @@
                 {
                     "matin":[
                         {
-                            "lundi":"11H00",
-                            "mardi":"09H30",
-                            "mercredi":"10H00",
-                            "jeudi":"08H00",
-                            "vendredi":"09H30"
+                            "Monday":"11H00",
+                            "Tuesday":"09H30",
+                            "Wednesday":"10H00",
+                            "Thursday":"08H00",
+                            "Friday":"09H30"
                         }
                     ],
                     "soir":[
                         {
-                            "lundi":"18H00",
-                            "mardi":"15H00",
-                            "mercredi":"18H00",
-                            "jeudi":"16H30",
-                            "vendredi":"17H00"
+                            "Monday":"18H00",
+                            "Tuesday":"15H00",
+                            "Wednesday":"18H00",
+                            "Thursday":"16H30",
+                            "Friday":"17H00"
                         }
                     ]
                 }
@@ -178,20 +178,20 @@
                 {
                     "matin":[
                         {
-                            "lundi":"08H00",
-                            "mardi":"08H30",
-                            "mercredi":"08H00",
-                            "jeudi":"11H00",
-                            "vendredi":"09H30"
+                            "Monday":"08H00",
+                            "Tuesday":"08H30",
+                            "Wednesday":"08H00",
+                            "Thursday":"11H00",
+                            "Friday":"09H30"
                         }
                     ],
                     "soir":[
                         {
-                            "lundi":"17H30",
-                            "mardi":"16H00",
-                            "mercredi":"15H00",
-                            "jeudi":"18H00",
-                            "vendredi":"16H30"
+                            "Monday":"17H30",
+                            "Tuesday":"16H00",
+                            "Wednesday":"15H00",
+                            "Thursday":"18H00",
+                            "Friday":"16H30"
                         }
                     ]
                 }
@@ -206,20 +206,20 @@
                 {
                     "matin":[
                         {
-                            "lundi":"08H00",
-                            "mardi":"09H30",
-                            "mercredi":"11H00",
-                            "jeudi":"08H00",
-                            "vendredi":"08H00"
+                            "Monday":"08H00",
+                            "Tuesday":"09H30",
+                            "Wednesday":"11H00",
+                            "Thursday":"08H00",
+                            "Friday":"08H00"
                         }
                     ],
                     "soir":[
                         {
-                            "lundi":"16H30",
-                            "mardi":"18H00",
-                            "mercredi":"18H00",
-                            "jeudi":"16H30",
-                            "vendredi":"15H00"
+                            "Monday":"16H30",
+                            "Tuesday":"18H00",
+                            "Wednesday":"18H00",
+                            "Thursday":"16H30",
+                            "Friday":"15H00"
                         }
                     ]
                 }
@@ -234,20 +234,20 @@
                 {
                     "matin":[
                         {
-                            "lundi":"08H00",
-                            "mardi":"11H00",
-                            "mercredi":"08H00",
-                            "jeudi":"08H00",
-                            "vendredi":"09H30"
+                            "Monday":"08H00",
+                            "Tuesday":"11H00",
+                            "Wednesday":"08H00",
+                            "Thursday":"08H00",
+                            "Friday":"09H30"
                         }
                     ],
                     "soir":[
                         {
-                            "lundi":"16H30",
-                            "mardi":"18H00",
-                            "mercredi":"12H30",
-                            "jeudi":"17H00",
-                            "vendredi":"15H30"
+                            "Monday":"16H30",
+                            "Tuesday":"18H00",
+                            "Wednesday":"12H30",
+                            "Thursday":"17H00",
+                            "Friday":"15H30"
                         }
                     ]
                 }
@@ -261,20 +261,20 @@
                 {
                     "matin":[
                         {
-                            "lundi":"10H00",
-                            "mardi":"13H30",
-                            "mercredi":"08H00",
-                            "jeudi":"09H30",
-                            "vendredi":"08H00"
+                            "Monday":"10H00",
+                            "Tuesday":"13H30",
+                            "Wednesday":"08H00",
+                            "Thursday":"09H30",
+                            "Friday":"08H00"
                         }
                     ],
                     "soir":[
                         {
-                            "lundi":"18H00",
-                            "mardi":"18H00",
-                            "mercredi":"17H00",
-                            "jeudi":"18H00",
-                            "vendredi":"12H30"
+                            "Monday":"18H00",
+                            "Tuesday":"18H00",
+                            "Wednesday":"17H00",
+                            "Thursday":"18H00",
+                            "Friday":"12H30"
                         }
                     ]
                 }
