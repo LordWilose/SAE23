@@ -8,29 +8,42 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
     <title>Cov'Auto</title>
 </head>
-<body>
-    <div id="logo">
-        <img src="logo_Cov_Auto.png" alt="Logo de l'application">
-    </div>
-    <div class="container_connect">
-        <h3>Connectez-vous</h3>
-        <div id="form">
-            <form action="connect.php" method="get">
-                <div id="nom_user">
-                    <label for="nom">Votre NOM:</label>
-                    <input type="text" name="nom" placeholder="GIVRON"/>
-                </div>
-                <div id="prenom_user">
-                    <label for="prenom">Votre Prénom:</label>
-                    <input type="text" name="prenom" placeholder="Stephane"/>
-                </div>
-                <div id="connection">
-                    <input type="submit" value="Se connecter" id="button_connect"/>
-                </div>
-            </form>
+    <body>
+        <nav id="nav_log">
+            <div id="nom_accueil">
+                <a href="index.html">Cov'Auto</a>
+            </div>
+        </nav>
+        <div id="logo">
+            <img src="logo_Cov_Auto.png" alt="Logo de l'application">
         </div>
-    </div>
-    
-
-</body>
+        <div class="container_connect">
+            <h3>Connectez-vous</h3>
+            <div id="form">
+                <form action="connect.php" method="get">
+                    <div id="nom_user">
+                        <label for="nom">Votre NOM:</label>
+                        <input type="text" name="nom" placeholder="GIVRON"/>
+                    </div>
+                    <div id="prenom_user">
+                        <label for="prenom">Votre Prénom:</label>
+                        <input type="text" name="prenom" placeholder="Stephane"/>
+                    </div>
+                    <div id="connection">
+                        <input type="submit" value="Se connecter" id="button_connect"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div id="copyrightEtIcons">
+                <div id="logo_fin">
+                    <img src="logo_Cov_Auto.png" alt="Logo de l'application">
+                </div>
+                <div id="copyright">
+                    <span>©Smart'Auto by Deuscheur Lucas & Ecotière Léo & Hirsch Matéo</span>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
